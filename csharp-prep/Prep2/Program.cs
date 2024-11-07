@@ -12,19 +12,37 @@ class Program
 
         if (percent >= 90)
         {
-            letter = "A";
+            if (percent >= 93)
+                letter = "A";
+            else
+                letter = "A-";
         }
         else if (percent >= 80)
         {
-            letter = "B";
+            if (percent >= 87)
+                letter = "B+";
+            else if (percent >= 83)
+                letter = "B";
+            else
+                letter = "B-";
         }
         else if (percent >= 70)
         {
-            letter = "C";
+            if (percent >= 77)
+                letter = "C+";
+            else if (percent >= 73)
+                letter = "C";
+            else
+                letter = "C-";
         }
         else if (percent >= 60)
         {
-            letter = "D";
+            if (percent >= 67)
+                letter = "D+";
+            else if (percent >= 63)
+                letter = "D";
+            else
+                letter = "D-";
         }
         else
         {
